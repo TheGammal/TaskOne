@@ -11,7 +11,7 @@ import NotFound from './Components/NotFound/NotFound'
 function App() {
   
   let x = createBrowserRouter([
-    {path:"taskOne/", element: <LayOut />, children: [
+    {path:"/", element: <LayOut />, children: [
       {path:"About", element: <About />},
       {path:"Portfolio", element: <Portfolio />},
       {path:"Contact", element: <Contact />},

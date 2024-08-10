@@ -6,7 +6,7 @@ export default function NavBar() {
         <nav className='bg-[#2c3e50] p-6 fixed z-10 top-0 left-0 w-full'>
             <div className='container mx-auto flex justify-between items-center p-3'>
                 <div className='text-white text-lg font-bold'>
-                    <NavLink to={'/taskOne/'} className='text-white text-lg font-bold' >START FRAMEWORK </NavLink>
+                    <NavLink to={'/'} className='text-white text-lg font-bold' >START FRAMEWORK </NavLink>
                 </div>
                 <div className='space-x-4'>
                     <NavLink to={'About'} className={
