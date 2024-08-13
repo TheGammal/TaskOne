@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -35,7 +35,7 @@ h1 {
 
 button {
   @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-gray-900 cursor-pointer transition-colors;
-}
+} */
 /* button:hover {
   border-color: #646cff;
 } */
@@ -43,7 +43,7 @@ button {
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
-
+/* 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -55,4 +55,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -13,4 +13,5 @@
 .goUp {
     /* top: 20px; */
     opacity: 1;
+    transition: all 0.5s;
 }

@@ -33,16 +33,16 @@ export default function Portfolio() {
         setCurrentIndex((a) => a > 0 ? a - 1 : allImg.length - 1 /*Or 5*/)
     }
     return (
-        <div className='bg-white p-6 absolute top-[68px] z-0 left-0 w-full flex flex-col justify-center items-center text-[#2c3e50] min-h-screen'>
-            <div className='container text-center mt-20'>
+        <div className='bg-white pt-16 text-[#2c3e50] flex flex-col items-center min-h-screen'>
+            <div className='container mx-auto text-center pt-20'>
                 <h2 className='text-4xl font-bold mb-4'>PORTFOLIO COMPONENT</h2>
-                <div className='flex justify-center items-center w-full mb-4'>
-                    <div className='w-1/12 border-t-4 border-[#2c3e50]'></div>
+                <div className='flex justify-center items-center'>
+                    <div className='w-20 border-t-4 border-[#2c3e50]'></div>
                     <i className='fa-solid fa-star mx-2 text-[#2c3e50]'></i>
-                    <div className='w-1/12 border-t-4 border-[#2c3e50]'></div>
+                    <div className='w-20 border-t-4 border-[#2c3e50]'></div>
                 </div>
             </div>
-            <div className='container grid grid-cols-3 gap-4 p-14 mb-56' onClick={handleIsOpen}>
+            <div className='container mx-auto grid grid-cols-3 py-3 lg:px-12' onClick={handleIsOpen}>
                 {/* {images.map((images, index) => (
                     <div key={index} className='flex items-center justify-center p-3'>
                         <img src={images.src} className=' rounded-lg' />
@@ -50,7 +50,7 @@ export default function Portfolio() {
 
                 ))} */}
                 {allImg.map((ele, index) => (
-                    <div key={index} className='flex items-center justify-center p-3'>
+                    <div key={index} className='p-3'>
                         <img src={ele} className=' rounded-lg' />
                     </div>
 
@@ -59,14 +59,12 @@ export default function Portfolio() {
             {/* هونيييييك */}
             {isOpen && (
                 <div className='fixed inset-0 bg-slate-400 flex items-center justify-center'>
-                    <div className='bg-red-700 p-3 flex'>
+                    <div className='bg-transparent p-3 flex justify-center'>
                         <button onClick={handlePrevious}>⏪</button>
-                        <img src={allImg[currentIndex]} alt="" />
+                        <img src={allImg[currentIndex]} alt="" className='w-2/3 ' />
                         <button onClick={handleNext}>⏩</button>
                     </div>
-                    <button onClick={closeModal} className='absolute start-3 top-28 rounded-full bg-fuchsia-700'>
-                    x
-                    </button>
+                    <button onClick={closeModal} className='absolute start-3 top-28 rounded-full bg-fuchsia-700 w-6'>X</button>
                     
                 </div>
             )}
